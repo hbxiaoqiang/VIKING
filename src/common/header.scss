@@ -1,0 +1,64 @@
+$rem16: 1rem;
+$colorWhite:#fff;
+
+@mixin nav_bar($rem,$color,$hight) {
+    font-size:$rem;
+    color:$color;
+    .item{
+        display: block;
+        height: $hight;
+        line-height: $hight;
+        color:$color;
+        transition: color 0.5s;
+    }
+    :hover{
+        color:red;
+    }
+    .item.active{
+        color:red;
+    }
+}
+
+.Header .pc-header{
+    background-color: #2d6cad;
+    padding-top:45px;
+    .logo{
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+    .navBar{
+        @include nav_bar($rem16,$colorWhite,50px);
+        text-indent: 10px;
+        .col-sm{
+            position: relative;
+            .child{
+                position: absolute;
+                z-index:99;
+                width: 200%;
+                height: 0;
+                overflow: hidden;
+                background-color:rgba($color: #fff, $alpha: 0.6);
+                opacity: 0;
+                transition: opacity 0.5s;
+                .child-item{
+                    display: block;
+                    width: 100%;
+                    color:#333;
+                    line-height: 3;
+                    text-indent: 10px;
+                }
+                :hover{
+                    background-color:#2d6cad;
+                    color:#fff
+                }
+            }
+            &:hover .child{
+                height: auto;
+                opacity:1
+            }
+        }
+
+    }
+}
