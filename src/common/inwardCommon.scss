@@ -1,0 +1,95 @@
+@mixin xg($h,$w,$bg,$m) {
+    height: $h;
+    width: $w;
+    background-color: $bg;
+    margin:$m
+}
+
+@mixin h4($c,$m,$f){
+    color:$c;
+    font-weight: 400;
+    font-size:$f;
+    margin:$m;
+}
+
+@mixin  p($m) {
+    font-size:14/16+rem;
+            color:#444;
+            margin:$m;
+}
+
+@mixin Arrow($l,$t,$c){
+    display: inline-block;
+    border-top: $t solid transparent;
+    border-left: $l solid $c;
+    border-bottom: $t solid transparent;
+}
+
+.Banner{
+    padding: 0 0 60px 0;
+    .banner{
+        position: relative;
+        img{
+            width: 100%;
+        }
+
+        .tit{
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            width: 25%;
+            padding-left: 5%;
+            padding-top: 15%;
+            background-color: #2d6cad50;
+            color:#fff;
+            font-size:32/16+rem;
+            .p2{
+                line-height: 1;
+            }
+            .mg{
+                @include xg(3px,40px,#b50000,10px 0 0 0)
+            }
+        }
+    }
+    .des{
+        margin-top:40px;
+        
+        .mg{
+            @include xg(3px,40px,#b50000,10px 0 0 0)
+        }
+        h4{
+            @include h4(#03014e,0 0 40px 0,28/16+rem);
+        }
+        p{
+            @include p(0 0 15px 0)
+        }
+    }
+}
+
+.AdModlue{
+    padding: 40px 0 60px 0;
+    .content{
+        background-color: #efefef;
+        .ft{
+            float: left;
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            
+            h4{
+                @include h4(#03014e,0 0 40px 0,28/16+rem)
+            }
+            .mg{
+                @include xg(3px,40px,#b50000,10px 0 0 0)
+            }
+            p{
+                @include p(20px 0 0 0)
+            }
+        }
+        .des{
+            padding: 20px 20px;
+        }
+    }
+}

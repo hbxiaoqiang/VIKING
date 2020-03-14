@@ -1,0 +1,68 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+@import '../detail/detail.scss';
+
+.boderTop{
+    border-top: 2px solid #111;
+    margin-bottom:10xp;
+}
+
+.Content{
+    .container{
+        position: relative;
+    }
+    .items{
+        padding: 0 300px 0 0;
+    }
+    .art{
+        font-size: 14/16+rem;
+        img{
+            width: 100%;
+        }
+        .p2{
+            margin-top:20px;
+        }
+    }
+    .other{
+        margin-top:40px;
+        margin-bottom: 30px;
+    }
+
+    .rightSide{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 270px;
+        .new_art{
+            margin-bottom: 40px;
+            padding-top: 20px;
+            h4{
+                @include h4(#03014e,0 0 30px 0,20/16+rem);
+                font-weight: 400;
+            }
+            ul li{
+                font-size: 14/16+rem;
+                margin-bottom: 30px;
+                a{
+                    color:#111
+                }
+            }
+        }
+        .new_fl{
+            @extend .new_art;
+            ul li{
+                font-size: 1rem;
+                margin-bottom: 5px;
+                padding: 15px 20px;
+                
+                background-color: #eee;
+            }
+            ul li:hover{
+                border-left: 3px solid #a90000;
+            }
+        }
+    }
+}

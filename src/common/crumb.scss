@@ -1,0 +1,19 @@
+.Crumb{
+    padding: 0.5rem 0;
+    font-size:14/16+rem;
+    .breadcrumb{
+        background-color: #fff;
+        a{
+            color:#555
+        }
+        .active{
+            color:#999
+        }
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before{
+        content: '';
+        @include Arrow(6px,4px,#a90000)
+    }
+
+}

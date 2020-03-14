@@ -1,0 +1,55 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+.Banner{
+    .des{
+        p{
+            font-size: 1rem;
+        }
+        p>span{
+            font-weight: 600;
+        }
+    }
+    padding: 0 0 20px 0;
+}
+
+.OlineContact{
+    background-color: #fff;
+    padding: 0 0 40px 0;
+    h4{
+        @include h4(#03014e,0 0 40px 0,28/16+rem)
+    }
+    .mg{
+        @include xg(3px,40px,#b50000,10px 0 0 0)
+    }
+    .contact {
+        position: relative;
+        padding: 40px;
+        margin-top:20px;
+        background-color: #5384ac;
+        .input,.textarea{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            border-width: 0;
+            font-size: 14px;
+            padding:12px 14px;
+        }
+        .textarea{
+            height: 100px;
+        }
+        .footer{
+            text-align: center;
+        }
+        .vj-bt{
+             @include a-btn(5px 80px,#fff,#a90000,#a90000,5rem);
+            
+            font-size: $f14;
+        }
+        .vj-bt:hover{
+            background-color: #a9000050;
+        }
+    }
+}

@@ -10,3 +10,25 @@ html{
 ol,ul {
     list-style:none;
 }
+body{
+    font-family: 'Montserrat-Regular', 'Microsoft YaHei', 'Helvetica Neue', Tahoma, Arial, 微软雅黑;
+}
+
+$blue:#0e9ef9;
+$white:#fff;
+$f54:40/16+rem;
+$f38:38/16+rem;
+$f28:28/16+rem;
+$f12:12/16+rem;
+$f14:14/16+rem;
+
+@mixin a-btn ($padding,$color,$bgcolor,$bc,$br){
+    display: inline-block;
+    padding: $padding;
+    color:$color;
+    background-color: $bgcolor;
+    border-style: solid;
+    border-color: $bc;
+    border-width: 1px;
+    border-radius: $br;
+}

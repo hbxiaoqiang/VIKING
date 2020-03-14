@@ -11,7 +11,17 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     entry: {
-        index:'./src/index'
+        index:'./src/index',
+        about_us:'./src/about/about_us',
+        vk_honor:'./src/about/vk_honor',
+        vk_culture:'./src/about/vk_culture',
+        vk_strength:"./src/about/vk_strength",
+        service:'./src/service',
+        case_list:'./src/case/list',
+        detail:'./src/detail/detail',
+        news:'./src/news',
+        job:'./src/job',
+        contact:'./src/contact'
     },
     devServer: {
         contentBase: './dist'
@@ -86,6 +96,61 @@ module.exports = {
             filename:'index.html',
             template: './template/index.html',
             chunks: ['vendor','common','index'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'about/about_us.html',
+            template: './template/about/about_us.html',
+            chunks: ['vendor','common','about_us'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'about/vk_honor.html',
+            template: './template/about/vk_honor.html',
+            chunks: ['vendor','common','vk_honor'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'about/vk_culture.html',
+            template: './template/about/vk_culture.html',
+            chunks: ['vendor','common','vk_culture'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'about/vk_strength.html',
+            template: './template/about/vk_strength.html',
+            chunks: ['vendor','common','vk_strength'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'service.html',
+            template: './template/service.html',
+            chunks: ['vendor','common','service'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'case/index.html',
+            template: './template/case/index.html',
+            chunks: ['vendor','common','case_list'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'case/detail.html',
+            template: './template/case/detail.html',
+            chunks: ['vendor','common','detail'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'news/index.html',
+            template: './template/news/index.html',
+            chunks: ['vendor','common','news'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'news/detail.html',
+            template: './template/news/detail.html',
+            chunks: ['vendor','common','detail'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'job.html',
+            template: './template/job.html',
+            chunks: ['vendor','common','job'],
+        }),
+        new HtmlWebpackPlugin({
+            filename:'contact.html',
+            template: './template/contact.html',
+            chunks: ['vendor','common','contact'],
         }),
         // new HtmlWebpackPlugin({
         //     filename:'about/sum.html',

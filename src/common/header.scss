@@ -39,7 +39,7 @@ $colorWhite:#fff;
                 width: 200%;
                 height: 0;
                 overflow: hidden;
-                background-color:rgba($color: #fff, $alpha: 0.6);
+                background-color:rgba($color: rgb(191, 211, 255), $alpha: 0.6);
                 opacity: 0;
                 transition: opacity 0.5s;
                 .child-item{

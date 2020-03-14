@@ -1,0 +1,38 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+
+.Content{
+    padding: 0 0 60px 0;
+    h4{
+        @include h4(#111,0 0 10px 0,24/16+rem)
+    }
+    .mg{
+        @include xg(3px,40px,#b50000,10px 0 0 0)
+    }
+    .art{
+        font-size: 14/16+rem;
+        img{
+            max-width: 100%;
+        }
+    }
+    .des{
+        font-size:12/16+rem;
+        color:#ccc;
+        a{
+            color:#333
+        }
+        .s{
+            margin:0 20px;
+        }
+        margin-bottom: 20px;
+    }
+}
+#root{
+    padding-bottom: 50px;
+}
+.Footer{
+    position: fixed;
+}

@@ -1,0 +1,53 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+
+.Banner{
+    padding: 0 0 30px 0;
+    .banner{
+        .tit{
+            background-color: #d6292950;
+        }
+    }
+}
+
+.Workflow{
+    padding: 0px 0 60px;
+    .items{
+        .padding{
+            padding: 30px 20px;
+        }
+        .item{
+            border: 4px solid #2d6cad;
+            padding: 40px 40px 0 80px;
+            height: 200px;
+            position: relative;
+            .img{
+                height: 50px;
+                width: 50px;
+                img{
+                    width: 100%;
+                }
+                position: absolute;
+                left:20px
+            }
+            .text{
+                h5{
+                    color:#730000;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 14/16+rem;
+                }
+            }
+           
+        }
+        .item:hover{
+            border: 4px solid #730000;
+            box-shadow: 1px 1px 10px #00000050;
+        }
+    }
+}

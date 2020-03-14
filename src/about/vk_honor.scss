@@ -1,0 +1,19 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+
+.Clientele{
+    padding: 40px 0;
+    .content{
+        .ft{
+            float: left;
+            width: 50%;
+            padding: 0 10px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -26,17 +26,6 @@ $f14:14/16+rem;
     padding: 0 0 $f54 0;
 }
 
-@mixin a-btn ($padding,$color,$bgcolor,$bc,$br){
-    display: inline-block;
-    padding: $padding;
-    color:$color;
-    background-color: $bgcolor;
-    border-style: solid;
-    border-color: $bc;
-    border-width: 1px;
-    border-radius: $br;
-}
-
 .Banner{
     img{
         width: 100%;

@@ -1,0 +1,28 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+.Banner{
+    padding: 0 0 20px 0;
+}
+.Job{
+    padding: 0 0 60px 0;
+    h4{
+        @include h4(#03014e,0 0 40px 0,28/16+rem)
+    }
+    .mg{
+        @include xg(3px,40px,#b50000,10px 0 0 0)
+    }
+    ul{
+        
+    }
+
+    ul li{
+        background-color: #f5f5ff;
+        padding: 20px 40px;
+        font-size:$f14;
+        color:#777;
+        margin-bottom: 10px;
+    }
+}
