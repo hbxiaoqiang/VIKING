@@ -19,9 +19,7 @@
     }
     .art{
         font-size: 14/16+rem;
-        img{
-            width: 100%;
-        }
+        
         .p2{
             margin-top:20px;
         }
@@ -47,7 +45,10 @@
                 font-size: 14/16+rem;
                 margin-bottom: 30px;
                 a{
-                    color:#111
+                    color:#111;
+                    &:hover{
+                        color:#a90000;
+                    }
                 }
             }
         }
@@ -62,6 +63,9 @@
             }
             ul li:hover{
                 border-left: 3px solid #a90000;
+            }
+            ul li:first-child:hover{
+                border-left: 3px solid #1b0bff;
             }
         }
     }
