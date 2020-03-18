@@ -14,6 +14,10 @@ body{
     font-family: 'Montserrat-Regular', 'Microsoft YaHei', 'Helvetica Neue', Tahoma, Arial, 微软雅黑;
 }
 
+.container{
+    overflow: hidden;
+}
+
 $blue:#0e9ef9;
 $white:#fff;
 $f54:40/16+rem;
@@ -31,4 +35,11 @@ $f14:14/16+rem;
     border-color: $bc;
     border-width: 1px;
     border-radius: $br;
+}
+
+@mixin prefix($attr,$value){
+    #{$attr}:$value;
+    -webkit-#{$attr}:$value;
+    -moz-#{$attr}:$value;
+    -ms-#{$attr}:$value;
 }

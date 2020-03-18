@@ -16,6 +16,9 @@
     }
     .items{
         padding: 0 300px 0 0;
+        @media (max-width:767px) {
+            padding:0;
+        }
     }
     .art{
         font-size: 14/16+rem;
@@ -30,6 +33,9 @@
     }
 
     .rightSide{
+        @media (max-width:767px) {
+            display: none;
+        }
         position: absolute;
         right: 0;
         top: 0;
