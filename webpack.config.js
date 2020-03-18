@@ -8,8 +8,9 @@ const webpack = require('webpack');
 //import tools from './src/tools.js'
 
 module.exports = {
-    mode: 'development',
+    mode: "development",//'development',
     devtool: 'inline-source-map',
+    //mode: "production",
     entry: {
         index:'./src/index',
         about_us:'./src/about/about_us',
