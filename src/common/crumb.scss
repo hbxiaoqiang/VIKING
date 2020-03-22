@@ -1,6 +1,9 @@
 .Crumb{
-    padding: 0.5rem 0;
-    font-size:14/16+rem;
+    padding: 2rem 0;
+    font-size:1rem;
+    ol.breadcrumb{
+        margin-bottom: 0;
+    }
     .breadcrumb{
         background-color: #fff;
         a{

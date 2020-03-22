@@ -69,8 +69,9 @@ $f14:14/16+rem;
                 background-color: rgba($color: #000000, $alpha: 0.5);
                 
                 h2{
-                    font-size:42/16+rem ;
+                    font-size:50/16+rem ;
                     //font-family: "Raleway", sans-serif;
+                    font-weight: 600;
                     margin-bottom: 20px;
                     text-shadow: 2px 1px 3px #000000;
                     letter-spacing:10px
@@ -98,15 +99,17 @@ $f14:14/16+rem;
 
 .About{
 
-    padding: 100/16+em 0;
+    padding: 150/16+em 0;
     .tit{
         @extend .eg-tit;
+        line-height: 2;
     }
     .cpy{
         @extend .cpy
     }
     p{
-        font-size: $f12;
+        font-size: $f14;
+        line-height: 1.8;
     }
     img{
         width: 100%;
@@ -131,7 +134,7 @@ $f14:14/16+rem;
 .Strength{
     background: url(../../images/bg2.jpg) center center no-repeat;
     background-size: 100%;
-    padding: 80/16+rem 0;
+    padding: 120/16+rem 0;
     
     .tit{
         @extend .eg-tit;
@@ -168,19 +171,25 @@ $f14:14/16+rem;
 
 .Sevices{
     background-color: $white;
-    padding: 80/16+rem 0;
+    padding: 120/16+rem 0;
+    .items{
+        padding: 20/16+rem 0;
+    }
     .items .item{
-        img {
-            float: left;
-            width: 25%;
-        }
+        
         .ft{
             float: left;
             width: 75%;
             padding-left: 5px;
+            
+        }
+        .ft.img {
+            width: 25%;
         }
         .tit{
-            font-size: 16/12+rem;
+            font-size: 14/12+rem;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
         .des{
             font-size: $f14;
@@ -197,8 +206,11 @@ $f14:14/16+rem;
         padding: 24/16+rem 0;
         .items .item{
             margin-bottom: 15px;
-            img {
+            .ft.img {
                 width: 14%;
+                img{
+                    width: 100%;
+                }
             }
         }
     }
@@ -223,7 +235,8 @@ $f14:14/16+rem;
         @extend .eg-tit;
     }
     .cpy{
-        @extend .cpy
+        @extend .cpy;
+        font-size:36/16+rem
     }
     .ft{
         width: 50%;
@@ -289,6 +302,7 @@ $f14:14/16+rem;
                 top:0;
                 left:0;
                 opacity: 0;
+                height: 0;
                 transition: opacity 1s;
                 .news_content{
                     padding: 15px 0 15px 15px ;
@@ -297,11 +311,11 @@ $f14:14/16+rem;
                     }
                     p{
                         line-height: 1.5;
-                        font-size: $f12;
+                        font-size: $f14;
                         margin-bottom: 1rem;
                     }
                     .more{
-                        font-size: $f12;
+                        font-size: $f14;
                         color:$blue
                     }
                     .more:hover{
@@ -315,6 +329,7 @@ $f14:14/16+rem;
                     background-repeat: no-repeat;
                     background-position: center center;
                     height: 343px;
+                    padding: 0 0;
                     .date{
                         position: absolute;
                         top:0;
@@ -334,11 +349,13 @@ $f14:14/16+rem;
                     }
                     img{
                         width: 100%;
+                        height: 100%;
                     }
                 }
             }
             .news_item.active{
                 opacity: 1;
+                z-index:99;
             }
         }
     }

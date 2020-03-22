@@ -15,15 +15,16 @@ $colorWhite:#fff;
         color:red;
     }
     .item.active{
-        color:red;
+        border-bottom: 4px solid red;
     }
 }
 
 .Header {
     background-color: #2d6cad;
-    padding-top:45px;
+    padding-top:30px;
     .logo{
         width: 200px;
+        margin-bottom: 10px;
         img{
             width: 100%;
         }

@@ -39,12 +39,12 @@
             left:0;
             height: 100%;
             width: 25%;
-            padding-left: 5%;
-            padding-top: 15%;
             background-color: #2d6cad50;
             color:#fff;
             font-size:32/16+rem;
-            
+            .conent{
+                position: absolute;
+            }
             .p2{
                 line-height: 1;
             }
