@@ -263,6 +263,9 @@ $f14:14/16+rem;
     .news{
         height: 615px;
         position: relative;
+        @media  (max-width: 768px){
+            height: 720px;
+        }
         .vj-bt{
             color:#333;
             padding: 5px 20px;
@@ -382,10 +385,15 @@ $f14:14/16+rem;
         .textarea{
             height: 100px;
         }
-        
+        .vj-bt{
+            @media  (max-width: 768px){
+                right: 50%;
+                margin-right: -105px;
+            }
+        }
     }
     @media  (max-width: 768px){
-        padding: 24/16+rem 0;
+        padding: 0;
     }
 }
 
