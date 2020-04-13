@@ -22,7 +22,8 @@ module.exports = {
         detail:'./src/detail/detail',
         news:'./src/news',
         job:'./src/job',
-        contact:'./src/contact'
+        contact:'./src/contact',
+        lift:'./src/lift/index'
     },
     devServer: {
         contentBase: './dist'
@@ -152,6 +153,18 @@ module.exports = {
             filename:'contact.html',
             template: './template/contact.html',
             chunks: ['vendor','common','contact'],
+        }),
+
+        new HtmlWebpackPlugin({
+            filename:'lift/index.html',
+            template: './template/lift/index.html',
+            chunks: ['vendor','common','lift'],
+        }),
+
+        new HtmlWebpackPlugin({
+            filename:'fittings/index.html',
+            template: './template/fittings/index.html',
+            chunks: ['vendor','common','lift'],
         }),
         // new HtmlWebpackPlugin({
         //     filename:'about/sum.html',

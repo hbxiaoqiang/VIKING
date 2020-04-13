@@ -1,0 +1,35 @@
+@import '../common/common.scss';
+@import '../common/inwardCommon.scss';
+@import '../common/header.scss';
+@import '../common/footer.scss';
+@import '../common/crumb.scss';
+
+.Lift{
+    .list{
+        margin-bottom: 20px;
+    }
+    .mg{
+        @include xg(3px,40px,#b50000,10px 0 0 0)
+    }
+    .zt{
+        font-size: 1rem;
+        color: #2d6cad;
+        position: relative;
+        padding-left: 1.2rem;
+        border-left: 3px solid #ff5050;
+    }
+    h4{
+        @include h4(#2d6cad,0 0 40px 0,24/16+rem);
+        text-align: center;
+    }
+    .item{
+        padding: 15px;
+        display: block;
+        p{
+            text-align: center;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}
